@@ -1,0 +1,38 @@
+<!-- <html>
+<head>
+	<title>CSE Mini- Mashup Project</title> -->
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/mashup.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/javascripts/mashup.js"></script>
+<!-- </head>
+<body> -->
+	<h1>Enter a 5digit zipcode to see the legislators and their most recent tweets</h1>
+	<form action="" id="rep-lookup">
+		<div>
+			<label for="state">Zip:</label>
+			<input type="text" id="state" name="state" required />
+		</div>
+
+		<div>
+			<input type="submit" id="btn-lookup" value="Look up my reps" />
+		</div>
+	</form>
+	<div id="mainDiv">
+
+		<p id="infoArea">temp text</p>
+
+		<div id="tweetArea">
+<!-- 			<p>temp text</p>
+ -->		<p> <%= @header %> </p>
+			<% if @response_code == "200" %>
+				<p> <% @tweets.each do |t| %>
+				 	<%= t "#{t["text"]}" %> <br>
+				 <% end %></p>
+			<% else %>
+				 <%= @tweets %>
+			<% end %>
+		</div>
+
+	</div>
+<!-- </body>
+</html> -->

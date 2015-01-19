@@ -1,0 +1,28 @@
+body{
+	text-align: center;
+}
+div#mainDiv{
+
+background-color: darkblue;
+color:red;
+width:auto;
+text-align: center;
+
+
+}
+
+p#infoArea{
+
+background-color: white;
+color:green;
+width:auto;
+
+}
+
+p#tweetArea{
+
+background-color: lightblue;
+width: auto;
+
+
+}
